@@ -9,17 +9,17 @@ const Results = ({ pets }) => {
       ) : (
         pets.map((pet) => (
           <Pet
+            id={pet.id}
             animal={pet.animal}
             breed={pet.breed}
             name={pet.name}
-            images={pet.image}
+            images={pet.images}
             location={`${pet.city}, ${pet.state}`}
             key={pet.id}
-
           />
         ))
       )}
     </div>
   );
 };
-export default Results
+export default Results;
